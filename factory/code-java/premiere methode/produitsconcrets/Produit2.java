@@ -1,4 +1,4 @@
-package produitsConcrets;
+package produitsconcrets;
 
 public class Produit2 extends Produit {
     public void methodeProduit() {

@@ -1,7 +1,6 @@
 import produitconcrets.Produit1;
 import produitconcrets.Produit2;
 
-
 public class Client {
 
     public static void main(String[] args) {
