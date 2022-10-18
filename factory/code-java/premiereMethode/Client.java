@@ -1,5 +1,3 @@
-import produitconcrets.Produit1;
-import produitconcrets.Produit2;
 
 public class Client {
 

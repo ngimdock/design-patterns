@@ -1,3 +1,5 @@
+import produitsconcrets.Produit1;
+import produitsconcrets.Produit2;
 
 // La fabique: c'est la classe qui va créer les objets grâce à la factory method
 public class ProduitFactory {
