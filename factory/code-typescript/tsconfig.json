@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "ESNext",
+    "noEmitOnError": false,
+    "noUncheckedIndexedAccess": true,
+    "declaration": true
+  },
+
+  "files": ["./premiereMethode/Client.ts", "./deuxiemeMethode/Client.ts"],
+  "include": ["./src/types/**/*"],
+
+  "exclude": ["./build", "./node_modules"]
+}
