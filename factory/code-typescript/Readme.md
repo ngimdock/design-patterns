@@ -37,13 +37,13 @@ Ces 2 commandes vont créer un dossier `build` avec tous les fichiers et dossier
 
 ## 5 - Exécuter le programme
 
-Pour la `première méthode` de factory
+Pour la **première méthode** de factory
 
 ```bash
   node dist/premiereMethode/Client.js
 ```
 
-Pour la `deuxième méthode` de factory
+Pour la **deuxième méthode** de factory
 
 ```bash
   node dist/deuxiemeMethode/Client.js
