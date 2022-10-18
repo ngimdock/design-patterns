@@ -35,7 +35,7 @@ ou si vous voulez que le code typescript soit automatiquement compilé en javasc
 
 Ces 2 commandes vont créer un dossier `build` avec tous les fichiers et dossier `typescript` transformé en `Javascript`.
 
-## 5 - Exécuter le programme
+## 4 - Exécuter le programme
 
 Pour la **première méthode** de factory
 

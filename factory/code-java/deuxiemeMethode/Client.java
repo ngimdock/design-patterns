@@ -8,11 +8,9 @@ public class Client {
 
         Produit produit = null;
 
-        Sysnem.out.println("Utilisation de la première fabrique");
         produit = produitFactory1.getProduit();
         produit.methodeProduit();
 
-        Sysnem.out.println("Utilisation de la deuxième fabrique");
         produit = produitFactory2.getProduit();
         produit.methodeProduit();
 
