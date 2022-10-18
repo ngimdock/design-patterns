@@ -1,4 +1,4 @@
-# Utilisation de la factory method
+# Utilisation de la factory
 
 Le pattern factory peut être implémenté avec 2 approches, ici vous avez les implémentations en typescript de ces 2 approches
 
