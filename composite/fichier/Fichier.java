@@ -1,6 +1,8 @@
-import composite.repertoire.Repertoire;
+package fichier;
 
-abstract class Fichier implements Repertoire {
+import repertoire.Repertoire;
+
+public abstract class Fichier implements Repertoire {
     private String nom;
     private String type;
 
@@ -15,7 +17,7 @@ abstract class Fichier implements Repertoire {
     }
 
     @Override
-    public String getType() {
+    public String getType(){
         return type;
     }
 

@@ -1,7 +1,7 @@
 package repertoire;
 
-interface Repertoire {
-    abstract String getNom();
-    abstract String getType();
-    abstract void decrire();
+public interface Repertoire {
+    String getNom();
+    String getType();
+    void decrire();
 }
