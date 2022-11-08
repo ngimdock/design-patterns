@@ -1,5 +1,5 @@
-// import repertoire.Repertoire;
-// import sous_repertoire.Sous_repertoire;
+import repertoire.Repertoire;
+import sous_repertoire.Sous_repertoire;
 import fichier.Fichier;
 import type_fichier.FichierPdf;
 import type_fichier.FichierTxt;
@@ -10,15 +10,16 @@ class Client {
 
         Fichier fichier2 = new FichierTxt("fichier2", "txt");
 
-        // Repertoire rep1 = new Sous_repertoire("rep1");
+        Fichier fichier3 = new FichierTxt("fichier3", "txt");
 
-        // rep1.add(fichier1);
+        Sous_repertoire rep1 = new Sous_repertoire("rep1", "dossier");
 
-        // rep1.add(fichier2);
+        Sous_repertoire rep2 = new Sous_repertoire("rep2", "dossier");
+        
+        rep2.add(fichier3);
 
-        // rep1.decrire();
+        rep1.add(fichier1, fichier2, rep2);
 
-        fichier1.decrire();
-        fichier2.decrire();
+        rep1.decrire();
     }
 }

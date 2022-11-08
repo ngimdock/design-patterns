@@ -11,11 +11,11 @@ import java.util.List;
 public class Sous_repertoire implements Repertoire {
     private String nom;
     private String type;
-    protected List<Repertoire> repertoireFils = new ArrayList<>();
+    private List<Repertoire> repertoireFils = new ArrayList<>();
 
-    public Sous_repertoire (String nom) {
+    public Sous_repertoire (String nom, String type) {
         this.nom = nom;
-        this.type = "dossier";
+        this.type = type;
     }
 
     @Override
@@ -30,8 +30,13 @@ public class Sous_repertoire implements Repertoire {
 
     @Override
     public void decrire() {
+
+        System.out.println("Nom: " + nom + "\nType: " + type);
+        System.out.println("Description de tous ses éléments du dossier " + nom);
+
         for(Repertoire repertoire : repertoireFils) {
             repertoire.decrire();
+            // System.out.println("Nom fils: " + repertoire.getNom() + "\nType fils: " + repertoire.getType()); 
         }
     }
 
@@ -56,6 +61,7 @@ public class Sous_repertoire implements Repertoire {
     }
 
     public Repertoire obtenir(int i) {
+
         return this.repertoireFils.get(i);
     }
 
