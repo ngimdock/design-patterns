@@ -4,11 +4,9 @@ import repertoire.Repertoire;
 
 public abstract class Fichier implements Repertoire {
     private String nom;
-    private String type;
 
-    public Fichier(String nom, String type) {
+    public Fichier(String nom) {
         this.nom = nom;
-        this.type = type;
     }
 
     @Override
@@ -16,13 +14,7 @@ public abstract class Fichier implements Repertoire {
         return nom;
     }
 
-    @Override
-    public String getType(){
-        return type;
-    }
+    public abstract String getType();
 
-    @Override
-    public void decrire() { 
-        System.out.println("Nom: " + this.getNom() + "\n Type: " + this.getType());
-    }
+    public abstract void decrire();
 }

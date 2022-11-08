@@ -13,9 +13,9 @@ public class Sous_repertoire implements Repertoire {
     private String type;
     private List<Repertoire> repertoireFils = new ArrayList<>();
 
-    public Sous_repertoire (String nom, String type) {
+    public Sous_repertoire (String nom) {
         this.nom = nom;
-        this.type = type;
+        this.type = "dossier";
     }
 
     @Override
