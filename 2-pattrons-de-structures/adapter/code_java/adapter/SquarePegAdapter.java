@@ -21,3 +21,4 @@ public class SquarePegAdapter extends RoundPeg {
         return result;
     }
 }
+

@@ -18,11 +18,14 @@ class Client {
 
         Sous_repertoire rep3 = new Sous_repertoire("rep3");
         
-        rep2.add(fichier3);
-        rep3.add(fichier1);
+        rep2.ajouter(fichier3);
 
-        rep1.add(fichier1, fichier2, rep2, rep3);
+        rep1.ajouter(fichier1, fichier2, rep2);
 
         rep1.decrire();
+
+        // System.out.println(rep1.getSousRepertoireFils());
+        // System.out.println(rep1.obtenir(0));
+
     }
 }

@@ -44,19 +44,19 @@ public class Sous_repertoire implements Repertoire {
         return repertoireFils;
     }
 
-    public void add(Repertoire repertoire) {
+    public void ajouter(Repertoire repertoire) {
         repertoireFils.add(repertoire);
     }
 
-    public void add(Repertoire...  repertoires){
+    public void ajouter(Repertoire...  repertoires){
         repertoireFils.addAll(Arrays.asList(repertoires));
     }
 
-    public void remove(Repertoire repertoire) {
+    public void supprimer(Repertoire repertoire) {
         repertoireFils.remove(repertoire);
     }
 
-    public void remove(Repertoire... repertoires) {
+    public void supprimer(Repertoire... repertoires) {
         repertoireFils.removeAll(Arrays.asList(repertoires));
     }
 
