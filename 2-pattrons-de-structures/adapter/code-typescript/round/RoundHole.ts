@@ -1,4 +1,4 @@
-import { RoundPeg } from "./RoundPeg";
+import { RoundPeg } from "./RoundPeg.js";
 
 export class RoundHole {
   constructor(private raduis: number) {}

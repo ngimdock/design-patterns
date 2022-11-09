@@ -1,20 +1,24 @@
-// import { RoundHole } from "./round/RoundHole";
-import { RoundPeg } from "./round/RoundPeg";
-// import { SquarePeg } from "square/SquarePeg";
-// import { SquarePegAdapter } from "adapters/SquarePegAdapter";
+import { RoundHole } from "./round/RoundHole.js";
+import { RoundPeg } from "./round/RoundPeg.js";
+import { SquarePeg } from "./square/SquarePeg.js";
+import { SquarePegAdapter } from "./adapters/SquarePegAdapter.js";
 
-// // const roundPeg = new RoundPeg(10);
-// // const roundHole = new RoundHole(20);
+const hole = new RoundHole(10);
 
-// // const roundPegMatchHole = roundHole.fits(roundPeg);
+const smallRoundPeg = new RoundPeg(3);
+const largeRoundPeg = new RoundPeg(17);
 
-// // console.log(roundPegMatchHole);
+if (hole.fits(smallRoundPeg)) console.log("Small round peg fits into hole");
+else console.log("Small round peg not fits into hole");
 
-// // const squarePeg = new SquarePeg(4);
-// // const adptedSquare = new SquarePegAdapter(squarePeg);
-// // const squarePegMatchHole = roundHole.fits(adptedSquare);
+if (hole.fits(largeRoundPeg)) console.log("Large round peg fits into hole");
+else console.log("Large round peg not fits into hole");
 
-// // console.log(squarePegMatchHole);
+const squarePeg = new SquarePeg(70);
 
-console.log("Adapter Pattern 3");
-console.log(RoundPeg);
+// should throw error
+//const answer = hole.fits(squarePeg)
+
+const adaptedSquarePeg = new SquarePegAdapter(squarePeg);
+if (hole.fits(adaptedSquarePeg)) console.log("square peg fits into hole");
+else console.log("square peg not fits into hole");

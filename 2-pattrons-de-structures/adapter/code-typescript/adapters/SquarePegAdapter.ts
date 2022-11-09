@@ -1,5 +1,5 @@
-import { RoundPeg } from "../round/RoundPeg";
-import { SquarePeg } from "../square/SquarePeg";
+import { RoundPeg } from "../round/RoundPeg.js";
+import { SquarePeg } from "../square/SquarePeg.js";
 
 export class SquarePegAdapter extends RoundPeg {
   constructor(private peg: SquarePeg) {
