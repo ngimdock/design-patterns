@@ -5,7 +5,7 @@
 Une fois dans le dossier `design-patterns`, dirigez-vous dans bon dossier avec cette commande.
 
 ```bash
-cd 2-pattrons-de-structures/adapter/code-java
+cd 2-pattrons-de-structures/composite/code-java
 ```
 
 ## Étape 2: Compiler le programme

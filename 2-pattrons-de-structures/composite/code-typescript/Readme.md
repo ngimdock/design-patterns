@@ -9,7 +9,7 @@ Pour exécuter ce programme, il faut avoir à la fois `nodejs` et `npm` install�
 Une fois dans le dossier `design-patterns`, dirigez-vous dans bon dossier avec cette commande.
 
 ```bash
-cd 2-pattrons-de-structures/adapter/code-typescript
+cd 2-pattrons-de-structures/composite/code-typescript
 ```
 
 ## Étape 2: Installer les dépendances
