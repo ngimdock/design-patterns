@@ -8,22 +8,32 @@ Pour exécuter ce programme, il faut avoir à la fois `nodejs` et `npm` install�
 
 Une fois dans le dossier `design-patterns`, dirigez-vous dans bon dossier avec cette commande.
 
-`cd 2-pattrons-de-structures/adapter/code-typescript`
+```bash
+cd 2-pattrons-de-structures/adapter/code-typescript
+```
 
 ## Étape 2: Installer les dépendances
 
 Si vous n'avez pas encore installé les dépendances, vous pouvez le faire à l'aide de la commande suivante (vous avez besoin de faire ceci une seule fois).
 
-`npm install`
+```bash
+npm install
+```
 
 ou
 
-`yarn install`
+```bash
+yarn install
+```
 
 ## Étape 3: Compiler le programme typescript en javascript
 
-`npx tsc`
+```bash
+npm tsc
+```
 
 ## Étape 4: Exécuter le programme
 
-`node build/Client.js`
+```bash
+node build/Client.js
+```
