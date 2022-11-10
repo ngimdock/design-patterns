@@ -1,4 +1,6 @@
+package produits_concrets;
 
+import produit.Produit;
 
 public class Produit1 extends Produit{
     

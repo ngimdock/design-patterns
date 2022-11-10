@@ -1,11 +1,13 @@
-import produitsconcrets.Produit1;
-import produitsconcrets.Produit2;
+package produit_factory;
 
-// La fabique: c'est la classe qui va créer les objets grâce à la factory method
+import produits_concrets.Produit1;
+import produits_concrets.Produit2;
+import produit.Produit;
+
 public class ProduitFactory {
 
-    private static final int TYPE_PRODUIT1 = 1;
-    private static final int TYPE_PRODUIT2 = 2;
+    public static final int TYPE_PRODUIT1 = 1;
+    public static final int TYPE_PRODUIT2 = 2;
 
     // La factory method
     public Produit getProduit(int typeProduit) {

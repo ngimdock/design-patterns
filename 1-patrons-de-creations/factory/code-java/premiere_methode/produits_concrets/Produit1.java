@@ -1,5 +1,6 @@
-// package produitsconcrets;
-// import premiereMethode.Produit;
+package produits_concrets;
+
+import produit.Produit;
 
 public class Produit1 extends Produit {
 

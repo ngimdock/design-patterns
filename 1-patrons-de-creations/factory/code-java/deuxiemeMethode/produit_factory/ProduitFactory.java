@@ -1,4 +1,6 @@
+package produit_factory;
 
+import produit.Produit;
 
 public abstract class ProduitFactory {
     public Produit getProduit() {

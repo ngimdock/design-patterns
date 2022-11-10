@@ -1,4 +1,7 @@
 
+import produit_factory.ProduitFactory;
+import produit.Produit;
+
 public class Client {
 
     public static void main(String[] args) {
@@ -12,8 +15,6 @@ public class Client {
         produit = produitFactory.getProduit(produitFactory.TYPE_PRODUIT2);
         produit.methodeProduit();
 
-        
-        System.out.println("Hello world to the client");
     }
 
 }
