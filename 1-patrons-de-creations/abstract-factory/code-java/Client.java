@@ -1,8 +1,5 @@
 import app.Application;
 
-import gui_elements.interfaces.*;
-import gui_elements.mac_elements.*;
-
 import factories.abstract_factories.GuiFactory;
 import factories.concrete_factories.*;
 
@@ -11,25 +8,22 @@ public class Client {
 
     public static void main(String[] args) {
 
-        Application app = new Application();
+        String SYSTEM_OS = "MAC";
 
         GuiFactory factory;
 
-        factory = new MacFactory();
+        if(SYSTEM_OS == "MAC")
+            factory = new MacFactory();
+        else if(SYSTEM_OS == "WINDOW")
+            factory = new WindowFactory();
 
-        Checkbox macCheck = factory.createCheckbox();
-        Button macBtn = factory.createButton();
+        else
+            throw new RuntimeException("Unknown OS");
 
-        macCheck.paint();
-        macBtn.paint();
+        Application app = new Application(factory);
 
-        factory = new WindowFactory();
-
-         Button winBtn = factory.createButton();
-         Checkbox winCheck = factory.createCheckbox();
-
-         winBtn.paint();
-         winCheck.paint();
+        app.createUiKids();
+        app.paint();
     }
 
 }
