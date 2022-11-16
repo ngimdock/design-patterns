@@ -1,4 +1,4 @@
-import { GUIFactory } from "./factories/guiFactory.js";
+import { GUIFactory } from "./factories/abstractFactories/guiFactory.js";
 import { Button } from "./guiElements/interfaces/button.js";
 import { Checkbox } from "./guiElements/interfaces/checkbox.js";
 
