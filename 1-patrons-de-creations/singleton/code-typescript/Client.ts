@@ -1,7 +1,7 @@
 import { Database } from "./database/database.js";
 
 const client = async () => {
-  const database: Database = Database.getInstance();
+  const database: Database = Database.getInstance("localhost", 3000);
 
   await database.connection();
 
