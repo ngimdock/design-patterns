@@ -6,7 +6,7 @@ Singleton est un patron de conception de création qui garantit que l’instance
 
 ## Structure générale
 
-![voir ici](https://i.ibb.co/McKmDRK/Capture-d-cran-du-2022-11-16-12-17-43.png)
+![voir ici](https://i.ibb.co/ZxsK4HM/singleton.png)
 
 ## Cas pratique du patron composite
 
