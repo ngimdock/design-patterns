@@ -1,5 +1,13 @@
-import { Singleton } from "./singleton.js";
+import { Database } from "./database/database.js";
 
-const singletonInstance = Singleton.getInstance();
+const client = async () => {
+  const database: Database = Database.getInstance();
 
-const singletonInstance2 = Singleton.getInstance();
+  await database.connection();
+
+  const allUsers = await database.query("SELECT * FROM Users");
+
+  console.log(allUsers);
+};
+
+client();
