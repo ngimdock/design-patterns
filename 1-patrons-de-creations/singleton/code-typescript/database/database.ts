@@ -35,12 +35,12 @@ export class Database {
       setTimeout(() => {
         resolve("resolved");
         console.log("Database connected ! ready to recieve queries...");
-      }, 2000)
+      }, 1400)
     );
   }
 
   async query(query: string): Promise<{ name: string; age: number }[]> {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 2300));
 
     return [
       { name: "john", age: 22 },

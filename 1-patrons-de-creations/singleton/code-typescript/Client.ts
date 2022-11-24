@@ -5,8 +5,6 @@ const client = async () => {
 
   const database2: Database = Database.getInstance();
 
-  const database3: Database = Database.getInstance();
-
   console.log(database === database2);
 
   await database.connection();
