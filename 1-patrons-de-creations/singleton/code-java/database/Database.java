@@ -7,15 +7,11 @@ public class Database {
     private String host;
     private int port;
 
-    private void Database() {}
+    private Database() {}
 
-    private void Database(String host, int port) {
+    private Database(String host, int port) {
         this.host = host;
         this.port = port;
-    }
-
-    public static void helloWorld() {
-        System.out.println("hello world !");
     }
 
     public static Database getInstance(){
@@ -27,13 +23,13 @@ public class Database {
         return Database.instance;
     }
 
-    // public static Database getInstance(String host, int port) {
-    //     if(instance == null) {
-    //         Database.instance = new Database(host, port);
-    //     }
+    public static Database getInstance(String host, int port) {
+        if(instance == null) {
+            Database.instance = new Database(host, port);
+        }
 
-    //     return Database.instance;
-    // }
+        return Database.instance;
+    }
 
     public String getHost() {
         return this.host;
