@@ -17,7 +17,7 @@ cd 1-patrons-de-creations/singleton/code-typescript
 Si vous n'avez pas encore installé les dépendances, vous pouvez le faire à l'aide de la commande suivante (vous avez besoin de faire ceci une seule fois).
 
 ```bash
-npm install
+npx install
 ```
 
 ou

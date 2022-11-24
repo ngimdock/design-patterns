@@ -29,7 +29,7 @@ yarn install
 ## Étape 3: Compiler le programme typescript en javascript
 
 ```bash
-npm tsc
+npx tsc
 ```
 
 ## Étape 4: Exécuter le programme
