@@ -1,5 +1,3 @@
 # Les patrons comportementaux
 
-## Présentation
-
-Les patrons comportementaux s’occupent des algorithmes et de la répartition des responsabilités entre les objets.
+Ils mettent en place une communication efficace et répartissent les responsabilités entre les objets.
