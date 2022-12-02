@@ -9,9 +9,13 @@ const remoteControle: RemoteControle = new RemoteControle(tv);
 remoteControle.tooglePower();
 remoteControle.volumeUp();
 
+console.log(tv.getVolume());
+
 const radio: Radio = new Radio();
 const advancedRemoteControle: AdvancedRemoteControl = new AdvancedRemoteControl(
   radio
 );
 
+console.log(radio.getVolume());
 advancedRemoteControle.mute();
+console.log(radio.getVolume());

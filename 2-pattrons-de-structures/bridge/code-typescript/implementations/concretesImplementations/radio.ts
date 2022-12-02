@@ -2,7 +2,7 @@ import { Device } from "../interface.js";
 
 export class Radio implements Device {
   private isRadioEnabled: boolean;
-  private volume: number = 0;
+  private volume: number = 30;
   private channel: number = 0;
 
   constructor(isRadioEnabled: boolean = false) {
@@ -28,7 +28,7 @@ export class Radio implements Device {
   }
 
   setVolume(percent: number): void {
-    this.volume += percent;
+    this.volume = percent;
   }
 
   getChannel(): number {

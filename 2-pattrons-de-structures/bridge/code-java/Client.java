@@ -17,6 +17,8 @@ public class Client {
 
         Radio radio = new Radio();
         AdvancedRemoteControl advanceControle = new AdvancedRemoteControl(radio);
-        // advanceControle.mute();
+        System.out.println(radio.getVolume());
+        advanceControle.mute();
+        System.out.println(radio.getVolume());
     }
 }

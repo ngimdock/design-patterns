@@ -2,7 +2,7 @@ import { Device } from "../interface.js";
 
 export class Tv implements Device {
   private isTvEnabled: boolean;
-  private volume: number;
+  private volume: number = 30;
   private channel: number = 1;
 
   constructor(isTvEnabled: boolean = false) {
@@ -26,7 +26,7 @@ export class Tv implements Device {
   }
 
   setVolume(percent: number): void {
-    this.volume += percent;
+    this.volume = percent;
   }
 
   getChannel(): number {
